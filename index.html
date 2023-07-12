@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/JS/index.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>EJERCICIOS DE FORMULARIOS</h1>
+    </header>
+
+    <main>
+        <!---------------------- LOGIN --------------------------------->
+        <h2>SISTEMA DE LOGIN</h2>
+        <form id="formLogin">
+            <label for="user">Ingrese usuario: </label>
+            <input type="text" id="user"> <br>
+
+            <label for="pass"> Ingrese contraseña: </label>
+            <input type="password" id='pass'> <br>
+
+            <input type="button" value="Enviar" onclick="login()">
+
+        </form>
+
+        <div id="mensaje1" style="color: blue;"></div>
+
+        <!-------------------- CALCULADORA -------------------------->
+        <hr>
+        <h2> CALCULADORA</h2>
+
+        <form>
+            <input type="number" id="num1" placeholder="Número 1">
+            <input type="number" id="num2" placeholder="Número 2"> <br>
+
+            <button type="button" onclick="sumar()"> SUMA</button>
+            <button type="button" onclick="restar()">RESTA</button>
+
+
+        </form>
+
+        <!-------- LISTA DE TAREAS --------->
+        <hr>
+        <h2>LISTA DE TAREAS</h2>
+
+        <form>
+            <input type="text" placeholder="Ingrese tareas" id="tarea">
+            <button type="button" onclick="agregarTarea()">Agregar</button>
+
+        </form>
+
+        <ol id="lista">
+           
+        </ol>
+
+
+    </main>
+
+
+
+
+    <footer></footer>
+
+</body>
+
+</html>
